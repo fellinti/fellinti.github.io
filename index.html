@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>Tim Fellin's Github Page</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Fellinti.GitHub.io : Technology Research Paper">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Fellinti.GitHub.io</title>
   </head>
+
   <body>
-    <h1>Tim Fellin</h1>
-    <p><img src="img/paintpic.jpeg" alt="Paint" /></p>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/fellinti">View on GitHub</a>
+
+          <h1 id="project_title">Fellinti.GitHub.io</h1>
+          <h2 id="project_tagline">Technology Research Paper</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Duo Security
+For this assignment I interviewed my friend Robbie Small who works as a software engineer at the company Duo Security based in Ann Arbor, Michigan. Duo Security is a company that provides two factor authentication for over 5000 organizations including Facebook, Twitter,  Yelp, and Etsy.</p>
+
+<p>Web and Database Servers
+Multiple Amazon Web Services (AWS) instances for database and web application deployment
+Redis for Key/value storage (I don’t know much about this)
+Web server - Google app engine for static website</p>
+
+<p>Special Software
+Salesforce for metrics
+Phabricator/confluence for internal use (picking up tasks to work on/internal documentation)
+Twilio API for sending out SMS messages and phone calls
+Google Cloud Messaging for Push service on Android and Apple Push Notifications for iOS</p>
+
+<p>Open Source Software/Hardware
+RX java (<a href="https://github.com/ReactiveX/RxJava">https://github.com/ReactiveX/RxJava</a>) for functional programming in the android app
+Hardware (Not open source) - yubikey for hardware 2 factor
+Have our own open sourse APIs for most languages/platforms (<a href="https://github.com/duosecurity">https://github.com/duosecurity</a>)</p>
+
+<p>Deployment Strategies 
+Release in 2 week “sprints” for the main product
+Multiple AWS instances incase one goes down/is overloaded
+Google app engine for static content (duosecurity.com)</p>
+
+<p>Security
+Heavily reliant on two factor services.
+Cannot authenticate without a second factor.
+push notification, HOTP (HMAC-based one time passcodes), TOTP (Time-based one time passcodes) or phone callback to verify identity
+Must sign into the Juniper VPN for development.
+Lots of audit scripts code must pass before building the product</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
