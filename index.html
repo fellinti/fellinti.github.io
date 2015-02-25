@@ -27,36 +27,48 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>Duo Security
-For this assignment I interviewed my friend Robbie Small who works as a software engineer at the company Duo Security based in Ann Arbor, Michigan. Duo Security is a company that provides two factor authentication for over 5000 organizations including Facebook, Twitter,  Yelp, and Etsy.</p>
+        <h1>
+<a id="duo-security" class="anchor" href="#duo-security" aria-hidden="true"><span class="octicon octicon-link"></span></a>Duo Security</h1>
 
-<p>Web and Database Servers
-Multiple Amazon Web Services (AWS) instances for database and web application deployment
-Redis for Key/value storage (I don’t know much about this)
-Web server - Google app engine for static website</p>
+<p>For this assignment I interviewed my friend Robbie Small who works as a software engineer at the company Duo Security based in Ann Arbor, Michigan. Duo Security is a company that provides two factor authentication for over 5000 organizations including Facebook, Twitter,  Yelp, and Etsy.</p>
 
-<p>Special Software
-Salesforce for metrics
-Phabricator/confluence for internal use (picking up tasks to work on/internal documentation)
-Twilio API for sending out SMS messages and phone calls
-Google Cloud Messaging for Push service on Android and Apple Push Notifications for iOS</p>
+<h2>
+<a id="web-and-database-servers" class="anchor" href="#web-and-database-servers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web and Database Servers</h2>
 
-<p>Open Source Software/Hardware
-RX java (<a href="https://github.com/ReactiveX/RxJava">https://github.com/ReactiveX/RxJava</a>) for functional programming in the android app
-Hardware (Not open source) - yubikey for hardware 2 factor
-Have our own open sourse APIs for most languages/platforms (<a href="https://github.com/duosecurity">https://github.com/duosecurity</a>)</p>
+<p>Multiple Amazon Web Services (AWS) instances for database and Web Application deployment<br>
+Redis for Key/Value Storage<br>
+Web Server - Google app engine for static website    </p>
 
-<p>Deployment Strategies 
-Release in 2 week “sprints” for the main product
-Multiple AWS instances incase one goes down/is overloaded
-Google app engine for static content (duosecurity.com)</p>
+<h2>
+<a id="special-software" class="anchor" href="#special-software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Special Software</h2>
 
-<p>Security
-Heavily reliant on two factor services.
-Cannot authenticate without a second factor.
-push notification, HOTP (HMAC-based one time passcodes), TOTP (Time-based one time passcodes) or phone callback to verify identity
-Must sign into the Juniper VPN for development.
-Lots of audit scripts code must pass before building the product</p>
+<p>Salesforce for metrics<br>
+Phabricator/Confluence for internal use (picking up tasks to work on/internal documentation)<br>
+Twilio API for sending out SMS messages and phone calls<br>
+Google Cloud Messaging for Push service on Android and Apple Push Notifications for iOS  </p>
+
+<h2>
+<a id="open-source-softwarehardware" class="anchor" href="#open-source-softwarehardware" aria-hidden="true"><span class="octicon octicon-link"></span></a>Open Source Software/Hardware</h2>
+
+<p>RX Java (<a href="https://github.com/ReactiveX/RxJava)for">https://github.com/ReactiveX/RxJava)for</a> functional programming in the Android App<br>
+Yubikey for 2 Factor Hardware<br>
+Duo Security also has their own open souce APIs for most languages/platforms (<a href="https://github.com/duosecurity">https://github.com/duosecurity</a>)  </p>
+
+<h2>
+<a id="deployment-strategies" class="anchor" href="#deployment-strategies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployment Strategies</h2>
+
+<p>Release in 2 week “sprints” for the main product<br>
+Multiple AWS instances in case one goes down or is overloaded<br>
+Google app engine for static content (duosecurity.com)  </p>
+
+<h2>
+<a id="security" class="anchor" href="#security" aria-hidden="true"><span class="octicon octicon-link"></span></a>Security</h2>
+
+<p>Heavily reliant on two factor services<br>
+Cannot authenticate without a second factor<br>
+Push Notification, HOTP (HMAC-based one time passcodes), TOTP (Time-based one time passcodes) or phone callback to verify identity<br>
+Must sign into the Juniper VPN for development<br>
+Lots of audit scripts code must pass before building the product  </p>
       </section>
     </div>
 
